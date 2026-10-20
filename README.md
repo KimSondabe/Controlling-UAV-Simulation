@@ -10,6 +10,7 @@ A simulation controlling UAV by keyboards and mission with PX4-AutoPilot, Gazebo
 
 ## INTRODUCTION
 &emsp;This project aims to control and simulation UAV in Gazebo Sim 8 by PX4-AutoPilot and ROS2 Humble. UAV can control by keyboards WASD and arrow keys. Moreover it can run mission by setpoint and adjust and create. Besides, it also has a position node to track the coordinate of UAV.
+![u0](u0.jpg)
 
 ## RUN SIMULATION
   After download 2 programs and execute and build it, run 4 terminal simultaneously in 4 different terminals. 
@@ -48,6 +49,7 @@ cd ros2_ws/
 source install/setup.bash
 ros2 run my_robot_controller position_node
 ```
+![u5](u5.jpg)
 
 ## HOW TO CONTROL 
 &emsp;Control node has 2 control mode 'Manual' or 'Mission'. Manual mode is the mode controling UAV by keyboards WASD and arrow keys to control the UAV. Mission mode is the mode UAV run automatically base on mission they're setting in the program. You can change the mission base on the setpoint in DEFAUT_MISSION in control_node file.
