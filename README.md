@@ -9,7 +9,7 @@ A simulation controlling UAV by keyboards and mission with PX4-AutoPilot, Gazebo
 - [THANKS TO](#thanks-to)
 
 ## INTRODUCTION
-  Thís project aims to control and simulation UAV in Gazebo Sim 8 by PX4-AutoPilot and ROS2 Humble. UAV can control by keyboards WASD and arrow keys. Moreover it can run mission by setpoint and adjust and create. Besides, it also has a position node to track the coordinate of UAV.
+&emsp;Thís project aims to control and simulation UAV in Gazebo Sim 8 by PX4-AutoPilot and ROS2 Humble. UAV can control by keyboards WASD and arrow keys. Moreover it can run mission by setpoint and adjust and create. Besides, it also has a position node to track the coordinate of UAV.
 
 ## RUN SIMULATION
   After download 2 programs and execute and build it, run 4 terminal simultaneously in 4 different terminals. 
@@ -46,37 +46,35 @@ ros2 run my_robot_controller position_node
 ```
 
 ## HOW TO CONTROL 
-  Control node has 2 control mode 'Manual' or 'Mission'. Manual mode is the mode controling UAV by keyboards WASD and arrow keys to control the UAV. Mission mode is the mode UAV run automatically base on mission they're setting in the program. You can change the mission base on the setpoint in DEFAUT_MISSION in control_node file.
+&emsp;Control node has 2 control mode 'Manual' or 'Mission'. Manual mode is the mode controling UAV by keyboards WASD and arrow keys to control the UAV. Mission mode is the mode UAV run automatically base on mission they're setting in the program. You can change the mission base on the setpoint in DEFAUT_MISSION in control_node file.
   
-  With Manual mode this is the instruction to control UAV:
-                T               :   TAKE OFF
-                
-                W / S           :   FLY FORWARD     (X)
-                
-                A / D           :   LEFT/RIGHT      (Y)
-                
-                UP/DOWN ARROW   :   INCREASE HEIGHT (Z)
-                
-                LEFT/RIGHT ARROW:   TURN LEFT/RIGHT (YAWN)
-                
-                Space           :   STOP AND HOLD POSITION
-                
-                M               :   FLY WITH MISSION
-                
-                L               :   LAND
-                
-                Q / Ctrl+C      :   EXIT
-                
-                    COORDINATE SYSTEMS NORTH-EAST-DOWN
-  With Mission mode, you just press 'M' then UAV will fly to go through all setpoint.
+&emsp;With Manual mode this is the instruction to control UAV:
+  
+T: Take-off
+
+W/S: Fly forward
+
+UP/DOWN ARROW: Increase height
+
+LEFT/RIGHT ARROW: Turn left/right
+
+SPACE: Stop and hold position
+
+M: Fly with mission
+
+L: Land
+
+Q/CTRL+C: Exit
+
+&emsp;With Mission mode, you just press 'M' then UAV will fly to go through all setpoint.
   
 ## NOTE
-  REMEMBER, NOT SHUTDOWN THE PROGRAM BY PRESS CTRL+C IN TERMINAL 
+&emsp;REMEMBER, NOT SHUTDOWN THE PROGRAM BY PRESS CTRL+C IN TERMINAL 
   
-  Because the Gazebo's World will run in the background and next time you can't create world with UAV.
+&emsp;Because the Gazebo's World will run in the background and next time you can't create world with UAV.
 
 ## CREDITS AND REFERENCES
-This project is based on:
+&emsp;This project is based on:
 
 [ROS2 and PX4 Tutorial | Simulated Offboard Mode](https://www.youtube.com/watch?v=8gKIP0OqHdQ&t=19s)
 
