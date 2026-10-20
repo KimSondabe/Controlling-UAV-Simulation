@@ -9,7 +9,7 @@ A simulation controlling UAV by keyboards and mission with PX4-AutoPilot, Gazebo
 - [THANKS TO](#thanks-to)
 
 ## INTRODUCTION
-&emsp;Thís project aims to control and simulation UAV in Gazebo Sim 8 by PX4-AutoPilot and ROS2 Humble. UAV can control by keyboards WASD and arrow keys. Moreover it can run mission by setpoint and adjust and create. Besides, it also has a position node to track the coordinate of UAV.
+&emsp;This project aims to control and simulation UAV in Gazebo Sim 8 by PX4-AutoPilot and ROS2 Humble. UAV can control by keyboards WASD and arrow keys. Moreover it can run mission by setpoint and adjust and create. Besides, it also has a position node to track the coordinate of UAV.
 
 ## RUN SIMULATION
   After download 2 programs and execute and build it, run 4 terminal simultaneously in 4 different terminals. 
@@ -19,17 +19,20 @@ A simulation controlling UAV by keyboards and mission with PX4-AutoPilot, Gazebo
 cd PX4-AutoPilots/
 make px4_sitl gz_x500
 ```
+![u1](u1.jpg)
 
   Terminal 2: QGroundControl (this is in my laptop, you can change directory base on your folder position)
 ```bash
 cd Downloads/
 ./QGroundControl
 ```
+![u2](u2.jpg)
 
   Terminal 3: MicroXRCEAgent
 ```bash
 MicroXRCEAgent udp4 -p 8888
 ```
+![u3](u3.jpg)
 
   Terminal 4: Control Node (this is in my laptop, you can change directory base on your folder position)
 ```bash
@@ -37,6 +40,7 @@ cd ros2_ws/
 source install/setup.bash
 ros2 run my_robot_controller control_node
 ```
+![u4](u4.jpg)
 
   Terminal 5: Position Node (this is in my laptop, you can change directory base on your folder position)
 ```bash
