@@ -4,6 +4,8 @@ A simulation controlling UAV by keyboards and mission with PX4-AutoPilot, Gazebo
 ## Table of Contents
 - [INTRODUCTION](#introduction)
 - [RUN SIMULATION](#run-simulation)
+  - [MANUAL MODE](#manual-mode)
+  - [MISSION MODE](#mission-mode)
 - [NOTE](#note)
 - [CREDITS AND REFERENCES](#credits-and-references)
 - [THANKS TO](#thanks-to)
