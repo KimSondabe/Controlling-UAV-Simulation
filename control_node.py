@@ -47,7 +47,6 @@ TOL_POS = 0.5
 TOL_YAW = math.radians(8.0)
 KP_MISSION = 1.0
 
-HELP = __doc__
 
 DEFAULT_MISSION = [
     dict(x=1.0,  y=0.0, z=-3.0,  yaw=45.0,  hold=5.0),
@@ -133,7 +132,6 @@ class KeyboardOffboard(Node):
 
         self.dt = 1.0 / RATE_HZ
         self.create_timer(self.dt, self.loop)
-        print(HELP)
 
     # ---------- Callbacks ----------
     def on_local_pos(self, msg):
