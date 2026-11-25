@@ -4,6 +4,7 @@ A simulation controlling UAV by keyboards and mission with PX4-AutoPilot, Gazebo
 ## Table of Contents
 - [INTRODUCTION](#introduction)
 - [REQUIREMENTS](#requirements)
+- [WORKFLOW](#workflow)
 - [RUN SIMULATION](#run-simulation)
   - [MANUAL MODE](#manual-mode)
   - [MISSION MODE](#mission-mode)
@@ -12,8 +13,9 @@ A simulation controlling UAV by keyboards and mission with PX4-AutoPilot, Gazebo
 - [THANKS TO](#thanks-to)
 
 ## INTRODUCTION
-&emsp;This project aims to control and simulation UAV in Gazebo Sim 8 by PX4-AutoPilot and ROS2 Humble. UAV can control by keyboards WASD and arrow keys. Moreover it can create, adjust and run mission. Besides, it also has a position node and RVIZ to track continuously the coordinate, direction and trajectory of UAV .
-![u0](u0.jpg)
+&emsp;This project aims to control and simulation UAV in Gazebo Sim 8 by PX4-AutoPilot and ROS2 Humble. UAV can control by keyboards WASD and arrow keys. Moreover it can create, adjust and run mission. Besides, it also has a position node and RVIZ to track continuously the coordinate, direction and trajectory of UAV.
+
+![u0](pictures/u0.jpg)
 
 
 
@@ -23,6 +25,10 @@ A simulation controlling UAV by keyboards and mission with PX4-AutoPilot, Gazebo
 - MicroXRCEAgent
 - ROS2 Humble
 - RViz V2
+
+## WORKFLOW
+  
+![u7](pictures/u7.svg)
 
 ## RUN SIMULATION
   After download the project, open new terminal and alias this following command in your computer helping next time to start easier.
