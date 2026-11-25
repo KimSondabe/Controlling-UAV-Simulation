@@ -17,7 +17,7 @@ A simulation controlling UAV by keyboards and mission with PX4-AutoPilot, Gazebo
 
 ![u0](pictures/u0.jpg)
 
-
+![u8](pictures/u8.jpg)
 
 ## REQUIREMENTS
 - Gazebo Sim 8
