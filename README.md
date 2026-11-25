@@ -15,6 +15,8 @@ A simulation controlling UAV by keyboards and mission with PX4-AutoPilot, Gazebo
 &emsp;This project aims to control and simulation UAV in Gazebo Sim 8 by PX4-AutoPilot and ROS2 Humble. UAV can control by keyboards WASD and arrow keys. Moreover it can create, adjust and run mission. Besides, it also has a position node and RVIZ to track continuously the coordinate, direction and trajectory of UAV .
 ![u0](u0.jpg)
 
+
+
 ## REQUIREMENTS
 - Gazebo Sim 8
 - PX4-AutoPilots
@@ -24,29 +26,40 @@ A simulation controlling UAV by keyboards and mission with PX4-AutoPilot, Gazebo
 
 ## RUN SIMULATION
   After download the project, open new terminal and alias this following command in your computer helping next time to start easier.
+
 ```bash
 alias drone-basic = 'Controlling-UAV-Simulation-main/start_drone.sh custom gz_x500'
 alias drone-stope = 'tmux kill-session -t drone 2>/dev/null; pkill -9 -x px4; pkill -9 -f "gz sim"; pkill -9 -x MicroXRCEAgent; pkill -9 -f rviz2; pkill -9 -f QGroundControl'
 ```
+
   It's help you start and bunch of programs easier and safetier for the next time instead of open terminal repeatedly.
   Moreover, you can change the model or world in file 'start_drone.sh' by changing the variable or change in command by link in the alias command, for example: 
+
 ```bash
 alias drone-lidar-2d = 'Controlling-UAV-Simulation-main/start_drone.sh custom gz_x500_lidar_2d'
 ```
 
   Terminal 1: PX4-AutoPilot 
+
 ![u1](pictures/u1.jpg)
 
   Terminal 2: QGroundControl (this is in my laptop, you can change directory base on your folder position)
+
 ![u2](pictures/u2.jpg)
 
   Terminal 3: MicroXRCEAgent
+
 ![u3](pictures/u3.jpg)
 
   Terminal 4: Control Node (this is in my laptop, you can change directory base on your folder position)
+
 ![u4](pictures/u4.jpg)
 
   Terminal 5: RViz display the trajectory, direction and terminal display the position and status of drone
+
+![u5](pictures/u5.jpg)
+
+![u6](pictures/u6.jpg)
 
 
 ## HOW TO CONTROL 
